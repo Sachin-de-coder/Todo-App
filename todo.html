@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./todo-style.css">
+</head>
+<style>
+    
+</style>
+<body>
+    <div class="container">
+        <div class="container-box">
+        <div class="input-container">
+            <label for="input-field" class="input-header" style="font-weight: bold;">Enter Your List:</label>
+            <input type="text" id="input-field" placeholder="Enter Your List">
+            <button id="add-input">Add</button>
+        </div>
+        <div class="input-value">
+            <h2>Your List <span id="input-value-empty">is Empty</span></h2>
+            <ul id="input-list"></ul>
+        </div>
+        <button id="clear-list">Clear List</button>
+        </div>  
+    </div>
+    <script src="./todo.js"></script>
+</body>
+
+</html>
