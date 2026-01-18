@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expance-Tracker</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expanse Tracker</h1>
+        <div class="input-field">
+            <label for="expense-name">Expanse Name:</label>
+            <input type="text" id="expense-name" name="expense-name" required/>
+            <label for="expense-name" style="margin-top: 10px;">Amount:</label>
+            <input type="number" id="expense-amount" name="expense-name" required/>
+            <button type="button" id="add">Add</button>
+        </div>
+        <div class="expense-list-container">
+            <h2>Your Expanses</h2>
+            <div class="table-container">
+            <table id="expence-list">
+                    <tr>
+                        <th>S.NO</th>
+                        <th>Expanse Name</th>
+                        <th>Amount</th>
+                        <th>Action</th>
+                    </tr>
+            </table>
+            </div>
+        </div>
+        <div class="expanse-total">
+            <h4>Total: $<span id="total-amount">0</span></h4>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

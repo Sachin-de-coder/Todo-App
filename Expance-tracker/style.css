@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background-image: linear-gradient(180deg, #74ebd5 0%, #ACB6E5 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Container */
+.container {
+    background-color: azure;
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 750px;
+    width: 100%;
+}
+
+/* Headings */
+.container h1,
+.expense-list-container h2 {
+    text-align: center;
+    padding: 10px 0px;
+}
+
+/* Labels */
+label {
+    font-size: 18px;
+}
+
+/* Inputs */
+input {
+    margin: 5px 5px 0 0;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    width: 200px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+/* Button */
+#add {
+    background-color: rgb(87, 178, 87);
+    border: none;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Table */
+.table-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+td button {
+    padding: 4px 8px;
+    margin: 5px 0;
+}
+
+/* Total Section */
+.expanse-total {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 580px) {
+
+    .input-field {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+    }
+
+    #add {
+        width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+}
